@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: url('img/kamera.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.ider-text{
+    background-color: #fff;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 15px;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    left: 10px;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+    max-height: 150px;
+    
+    
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 50px;
+    transition: all ease 0.5s;
+    z-index: 99999;
+    padding-right: 0;
+    
+
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header ul li a{
+    color: #000;
+    transition: all ease 0.5s;
+    font-weight: 500;
+}
+
+header ul li a:hover{
+    color: #7fffd4;
+}
+
+.search-from{
+    display: flex;
+    align-items: center;
+    
+
+}
+
+
+.search-from input[type=text]{
+    padding: 8px 12px;
+    border: 2px solid white;
+    border-radius: 10px;
+    outline: none;
+    width: 400px;
+    background: transparent;
+    cursor: pointer;
+    height: 30px;
+    color: #fff;
+    
+}
+
+.search-from input:hover{
+    background-color: rgb(17, 161, 165);
+}
+
+::placeholder{
+    color: white;
+}
+
+
+.container{
+    border:2px solid white;
+    width: 90%;
+    height: 90%;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.poster-container{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 400px;
+}
+
+
+
+.poster-menu{
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 380px;
+}
+
+.poster-menu:hover a img{
+    width:300px;
+    transition: all 0.3s ease;
+}
+
+.poster-info{
+    position: absolute;
+    color:#fff;
+    bottom: 50px;
+    background-color: gray;
+    width: 250px;
+    
+}
+.poster-menu:hover .poster-info {
+    bottom: 20px;
+    width: 300px;
+    transition: all 0.3s ease;
+    
+}
+
+.poster-menu:hover .poster-meta{
+    top: -30px;
+    transition: all 0.3s ease;
+}
+
+.poster-menu:hover .IMDB{
+    top: -30px;
+    transition: all 0.3s ease;
+}
+.poster-menu:hover .movie-summary{
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.poster-meta{
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    color: white;
+    background-color: gray;
+    opacity: 0.8;
+    border-radius: 10px;
+    font-size: 12px;
+    padding-inline: 5px;
+
+}
+
+.movie-summary{
+    display: none;
+    text-align: left;
+    padding-inline: 5px;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    height: 240px;
+    top: 50px;
+}
+
+.IMDB{
+    color: yellow;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    background-color: rgb(128, 128, 128, 0.8);   
+    border-radius: 10px;
+    padding-inline: 5px;
+    font-family: "Oswald", sans-serif;
+    
+}
+
+.icon-container{
+    width: 50px;
+}
+
+.icon-1{
+    transform: scaleX(-1);
+    width: 40px;
+    
+    
+}
+
+.icon-1:hover{
+    width: 50px;
+}
+
+.icon-2{
+
+    width: 40px;
+    
+    
+}
+
+.icon-2:hover{
+    width: 50px;
+}
+
+
+
+    
