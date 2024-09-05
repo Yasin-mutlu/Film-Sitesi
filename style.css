@@ -279,7 +279,7 @@ header ul li a:hover {
 }
 
 .actors-header {
-    background-color: aquamarine;
+    background-color: #E6F898;
     font-size:20px;
     font-family: "Poppins", sans-serif;
 }
@@ -430,6 +430,68 @@ header ul li a:hover {
 }
 
 
+.box{
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.movie-all-movie{
+    width: 80%;
+    margin-top: 15%;
+    background-color: rgb(71, 67, 67, 0.95);
+    border-radius: 10px;
+    padding: 20px; 
+    overflow: hidden; /* Taşmayı önlemek için */
+    display: f;
+    
+    
+    
 
+}
+
+.movieTitle h3{
+    color: #fff;
+    font-size: 200%;
+    margin: 1% 2%;
+    text-align: left;
+
+
+}
+
+.movieInformationPhoto img{
+    border: #E6F898 solid 2px;
+    left: 0;
+    position: relative;
+    width: 30%;
+    max-width: 300px;
+    margin-left: 2%;
+}
+
+.movie-shorts{
+    position: absolute;
+    width: 50%;
+    right: 12%;
+    top: 25%;
+    font-size: 150%;
+    color: #E6F898;
+}
+.movieInformation{
+    position: absolute;
+    width: 50%;
+    right: 12%;
+    top: 30%;
+    font-size: 120%;
+    color: #fff;
+    
+}
+
+.movieIcons img{
+    position: absolute;
+    right: 57%;
+    top: 53%;
+    width: 5%;
+
+}
 
 
