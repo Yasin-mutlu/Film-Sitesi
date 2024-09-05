@@ -507,4 +507,18 @@ header ul li a:hover {
     
 }
 
+.movieIcons-info{
+    display: flex;
+    font-size: 40%; 
+    gap: 2%;
+    color: #ffffff;
+    margin-bottom: 8px;
+    display: flex;
+    
+}
 
+.movieIcons-info img{
+    width: 6%;
+    margin-bottom: 8px;
+    
+}
