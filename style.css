@@ -489,7 +489,7 @@ header ul li a:hover {
 .movieInformation{
     
     
-    font-size: 1.3vw;
+    font-size: clamp(12px, 1.4vw, 25px);
     color: #fff;
     
 }
