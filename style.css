@@ -443,7 +443,7 @@ header ul li a:hover {
     border-radius: 10px;
     padding: 20px; 
     overflow: hidden; /* Taşmayı önlemek için */
-    display: f;
+    
     
     
     
@@ -459,39 +459,52 @@ header ul li a:hover {
 
 }
 
+.box1{
+    display: flex;
+    height: 500px;
+    border:2px solid red
+}
+
+.movieInformationPhoto{
+    align-items: center;
+    justify-content: center;
+}
+
 .movieInformationPhoto img{
     border: #E6F898 solid 2px;
     left: 0;
-    position: relative;
-    width: 30%;
+    width: 95%;
     max-width: 300px;
     margin-left: 2%;
 }
 
 .movie-shorts{
-    position: absolute;
-    width: 50%;
-    right: 12%;
-    top: 25%;
+    border:2px solid purple;
+    text-align: left;
     font-size: 150%;
+    width: 65%;
     color: #E6F898;
+    padding-left: 2%;
 }
 .movieInformation{
-    position: absolute;
-    width: 50%;
-    right: 12%;
-    top: 30%;
-    font-size: 120%;
+    
+    
+    font-size: 1.3vw;
     color: #fff;
     
 }
 
-.movieIcons img{
-    position: absolute;
-    right: 57%;
-    top: 53%;
-    width: 5%;
+.movieIcons{
+    display: flex;
+    font-size: 60%;
+    align-items: center;
+    gap: 2%;
+    color: #ffffff;
+}
 
+.movieIcons img{
+    width: 12%;
+    
 }
 
 
