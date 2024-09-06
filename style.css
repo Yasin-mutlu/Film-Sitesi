@@ -20,7 +20,7 @@ body {
     font-family: "Oswald", sans-serif;
 }
 
-.ider-text {
+.header-text {
     background-color: #fff;
     padding: 10px;
     border-top-left-radius: 8px;
@@ -35,7 +35,9 @@ body {
 }
 
 .logo img {
-    width: 150px;
+    width: 100%;
+    min-width: 100px;
+    max-width: 150px;
     height: auto;
     max-height: 150px;
 }
@@ -45,7 +47,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 13%;
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -150,7 +152,7 @@ header ul li a:hover {
 .poster-info {
     position: absolute;
     color: #fff;
-    font-size: 85%;
+    font-size: 1vw;
     
     background-color: gray;
     bottom: 5%;
@@ -173,7 +175,7 @@ header ul li a:hover {
     background-color: gray;
     opacity: 0.8;
     border-radius: 10px;
-    font-size: 70%;
+    font-size: 0.72vw;
     padding-inline: 5px;
 }
 
@@ -206,6 +208,7 @@ header ul li a:hover {
 .IMDB {
     color: yellow;
     position: absolute;
+    font-size: 0.9vw;
     top: 2px;
     right: 5px;
     background-color: rgba(128, 128, 128, 0.8);
@@ -215,26 +218,26 @@ header ul li a:hover {
 }
 
 .icon-container {
-    width: 50px;
+    width: 5%;
 }
 
 .icon-1 {
     transform: scaleX(-1);
-    width: 40px;
+    width: 70%;
     transition: all 0.3s ease;
 }
 
 .icon-1:hover {
-    width: 50px;
+    width: 80%;
 }
 
 .icon-2 {
-    width: 40px;
+    width: 70%;
     transition: all 0.3s ease;
 }
 
 .icon-2:hover {
-    width: 50px;
+    width: 80%;
     
 }
 
@@ -243,6 +246,7 @@ header ul li a:hover {
 .actor-container {
     
     margin-top: 5%;
+    width: 100%;
 
 }
 
@@ -253,7 +257,7 @@ header ul li a:hover {
 }
 
 .actor-name {
-    font-size: 11px;
+    font-size: clamp(5px, 0.8vw, 25px);
     color:white;
     margin-top: 12%;
     margin-bottom: 5%;
@@ -279,8 +283,8 @@ header ul li a:hover {
 }
 
 .actors-header {
-    background-color: aquamarine;
-    font-size:20px;
+    background-color: #E6F898;
+    font-size: 1.5vw;
     font-family: "Poppins", sans-serif;
 }
 
@@ -289,6 +293,9 @@ header ul li a:hover {
     font-size: 20px;
     color: #fff;
     text-align: left;
+    width: 75%;
+    height: 60%;
+    border: 2px solid blue;
     
   
     
@@ -297,36 +304,41 @@ header ul li a:hover {
 .bottom-container{
     display: flex;
     position: relative;
+    width: 100%;
+    border: 2px solid red;
+    
     
 }
 .movies-photo{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 100px;
-    gap: 10px;
+    margin-top: 2%;
+    gap: 1%;
     
     
 }
 
 .movie-item{
+    border: 1px solid;
     position: relative;
-    width: 230px;
-    height: 370px;
+    display:grid;
+    width: 100%;
+    max-height: 260px;
+    height: 100%;
     overflow: hidden;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
- 
+    
+    
+    
         
 }
 
 .movie-item img{
-    width: 230px;
-    height: 370px;
+    
+    width: 100%;
+    height: 100%;
     transition: opacity 0.3s ease;
-    object-fit: cover;
+    
+    max-width: 250px ;
+    max-height: 260px;
 }
 
 .movie-info {
@@ -354,30 +366,32 @@ header ul li a:hover {
 }
 
 .movie-info h3 {
-    font-size: 18px;
+    font-size: 1.1vw;
     margin: 0;
     padding: 10px;
 }
 
 .film{
-    margin-left: 100px;
-    margin-top: 80px;
+    margin-left: 5%;
+    font-size: 2vw;
+    
 }
 
 .category {
     background-color: #000000; /* Arka plan rengi */
     padding: 20px; /* İç boşluk */
     border-radius: 8px; /* Köşe yuvarlama */
-    width: 350px; /* Genişlik */
+    width: 22%; /* Genişlik */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölge */
     position: absolute; /* Konumlandırma */
-    top: 130px; /* Üstten boşluk */
+    top: 6.5%; /* Üstten boşluk */
     right: 0; /* Sağdan boşluk */
-    margin: 15px; /* Margin ayarları */
+    margin: 1%; /* Margin ayarları */
+    
 }
 
 .category h2 {
-    font-size: 1.5em; /* Başlık boyutu */
+    font-size: 2.5vw; /* Başlık boyutu */
     color:white; /* Başlık rengi */
     margin-bottom: 15px; /* Başlık ile liste arasındaki boşluk */
 }
@@ -389,7 +403,7 @@ header ul li a:hover {
 }
 
 .category ul li {
-    font-size: 1.1em; /* Liste elemanı boyutu */
+    font-size: 1.2vw; /* Liste elemanı boyutu */
     color: white; /* Liste elemanı rengi */
     padding: 8px 0; /* Liste elemanları arasındaki boşluk */
     border-bottom: 1px solid #ddd; /* Liste elemanlarının altına çizgi */
@@ -409,6 +423,7 @@ header ul li a:hover {
     justify-content: center; /* Sayfanın ortasına hizalar */
     padding: 20px;
     
+    
 }
 
 .pagination a {
@@ -418,6 +433,8 @@ header ul li a:hover {
     border: 1px solid #ddd; /* Kenarlık */
     margin: 0 2px; /* Aralık */
     border-radius: 4px; /* Köşe yuvarlama */
+    font-size: 1.1vw;
+    
 }
 
 .pagination a:hover {
@@ -429,7 +446,7 @@ header ul li a:hover {
     color: white;
 }
 
-
+/*-------------FİLM SAYFALARI---------*/
 .box{
     display: flex;
     justify-content: center;
@@ -443,10 +460,6 @@ header ul li a:hover {
     border-radius: 10px;
     padding: 20px; 
     overflow: hidden; /* Taşmayı önlemek için */
-    
-    
-    
-    
 
 }
 
